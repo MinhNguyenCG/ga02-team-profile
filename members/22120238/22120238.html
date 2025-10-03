@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile — Nguyen Minh Nguyen | _underscore</title>
+    <meta
+      name="description"
+      content="_underscore member profile — Nguyen Minh Nguyen, Student ID 22120238."
+    />
+
+    <link rel="stylesheet" href="../member.css" />
+  </head>
+  <body class="page">
+    <!-- Header -->
+    <header class="site-header" role="banner">
+      <div class="header-container">
+        <a
+          class="brand"
+          href="../../default.html"
+          aria-label="Back to _underscore homepage"
+        >
+          <span class="brand-underscore">_</span><span>underscore</span>
+        </a>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <span>Profile</span>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+      <div class="container">
+        <!-- Back Link -->
+        <a class="back-link" href="../../default.html">
+          <svg class="back-icon" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to group page
+        </a>
+
+        <!-- Profile Card -->
+        <article
+          class="profile-card"
+          itemscope
+          itemtype="https://schema.org/Person"
+        >
+          <meta itemprop="affiliation" content="_underscore" />
+
+          <!-- Profile Header -->
+          <div class="profile-header">
+            <div class="avatar-container">
+              <img
+                class="avatar"
+                itemprop="image"
+                src="./images/MinhNguyen01.jpg"
+                alt="Portrait of Nguyễn Minh Nguyên"
+              />
+            </div>
+            <h1 class="profile-name" itemprop="name">Nguyen Minh Nguyen</h1>
+            <span
+              class="profile-badge"
+              itemprop="identifier"
+              aria-label="Student ID"
+            >
+              Student ID: 22120238
+            </span>
+          </div>
+
+          <!-- Profile Body -->
+          <div class="profile-body">
+            <!-- Contact Information Section -->
+            <section class="profile-section">
+              <h2 class="section-title">Contact Information</h2>
+              <div class="info-grid">
+                <div class="info-item">
+                  <dt class="info-label">Date of Birth</dt>
+                  <dd class="info-value">
+                    <time itemprop="birthDate" datetime="yyyy-mm-dd"
+                      >01/01/2004</time
+                    >
+                  </dd>
+                </div>
+                <div class="info-item">
+                  <dt class="info-label">Email</dt>
+                  <dd class="info-value">
+                    <a itemprop="email" href="mailto:minh.nguyen@example.com">
+                      nguyenptn1104@gmail.com
+                    </a>
+                  </dd>
+                </div>
+                <div class="info-item">
+                  <dt class="info-label">Phone</dt>
+                  <dd class="info-value">
+                    <a itemprop="telephone" href="tel:+84xxxxxxxxx">
+                      0376566169
+                    </a>
+                  </dd>
+                </div>
+              </div>
+            </section>
+
+            <section class="profile-section">
+              <h2 class="section-title">Social</h2>
+              <div class="social-links">
+                <a
+                  class="social-link github"
+                  href="https://github.com/MinhNguyenCG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub profile"
+                >
+                  <span class="social-icon" aria-hidden="true">GH</span>
+                  <span>github.com/MinhNguyenCG</span>
+                </a>
+                <a
+                  class="social-link facebook"
+                  href="https://www.facebook.com/NguyenPTN/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook profile"
+                >
+                  <span class="social-icon" aria-hidden="true">FB</span>
+                  <span>facebook.com/NguyenPTN</span>
+                </a>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>
+          Group email:
+          <a class="link" href="mailto:underscore@example.com"
+            >underscore@example.com</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
