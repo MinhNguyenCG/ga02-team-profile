@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>_underscore — Modern Team Portfolio</title>
+    <title>_underscore</title>
     <meta
       name="description"
       content="_underscore team introduction — 2 members: Nguyen Minh Nguyen (22120238), Nguyen Trong Nhan (22120248)."
@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <div class="container nav-container">
-        <a href="#team-image" class="logo">
+        <a href="#home" class="logo">
           <span class="logo-underscore">_</span>
           <span class="logo-text">underscore</span>
         </a>
@@ -32,7 +32,6 @@
         </button>
 
         <ul class="nav-menu">
-          <li><a href="#team-image" class="nav-link">Team Image</a></li>
           <li><a href="#home" class="nav-link active">Welcome</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -42,39 +41,8 @@
       </div>
     </nav>
 
-    <!-- Group Image with Image Map -->
-    <section id="team-image" class="group-image-section">
-      <div class="container">
-        <img
-          src="images/group.png"
-          alt="Team _underscore"
-          usemap="#teammap"
-          class="group-image"
-        />
-        <map name="teammap">
-          <!-- Adjust coordinates based on actual positions in your image -->
-          <!-- Left member - Nguyen Minh Nguyen -->
-          <area
-            shape="rect"
-            coords="250,50,400,500"
-            href="members/22120238/22120238.html"
-            alt="Nguyen Minh Nguyen"
-            title="Nguyen Minh Nguyen - ID: 22120238"
-          />
-          <!-- Right member - Nguyen Trong Nhan -->
-          <area
-            shape="rect"
-            coords="450,50,600,500"
-            href="members/22120248/22120248.html"
-            alt="Nguyen Trong Nhan"
-            title="Nguyen Trong Nhan - ID: 22120248"
-          />
-        </map>
-      </div>
-    </section>
-
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="section hero" id="home">
       <div class="hero-background">
         <div class="gradient-orb orb-1"></div>
         <div class="gradient-orb orb-2"></div>
@@ -125,6 +93,34 @@
           <p class="section-subtitle">
             A small but mighty team focused on delivering excellence
           </p>
+           <!-- Team Image with Image Map -->
+        <div class="about-team-image animate-on-scroll">
+          <img
+            src="images/group.png"
+            alt="Team _underscore - Click on members to view their profiles"
+            usemap="#teammap"
+            class="team-photo"
+          />
+          <map name="teammap">
+            <!-- Adjust coordinates based on actual positions in your image -->
+            <!-- Left member - Nguyen Minh Nguyen -->
+            <area
+              shape="circle"
+              coords="590,195,88"
+              href="members/22120238/22120238.html"
+              alt="Nguyen Minh Nguyen"
+              title="Nguyen Minh Nguyen - ID: 22120238"
+            />
+            <!-- Right member - Nguyen Trong Nhan -->
+            <area
+              shape="circle"
+              coords="810,226,88"
+              href="members/22120248/22120248.html"
+              alt="Nguyen Trong Nhan"
+              title="Nguyen Trong Nhan - ID: 22120248"
+            />
+          </map>
+        </div>
         </div>
 
         <div class="about-content">
@@ -221,7 +217,7 @@
               <span class="tech-tag">C#</span>
               <span class="tech-tag">Game Dev</span>
             </div>
-            <a href="https://github.com/nhan925/SBomber" class="project-link">
+            <a href="https://github.com/nhan925/SBomber" class="project-link" target="_blank">
               View Project
               <svg
                 width="16"
@@ -289,6 +285,7 @@
             <a
               href="https://github.com/nhan925/wp.portalProject"
               class="project-link"
+              target="_blank"
             >
               View Project
               <svg
@@ -357,6 +354,7 @@
             <a
               href="https://github.com/orgs/IELTS-WEB-HCMUS/repositories"
               class="project-link"
+              target="_blank"
             >
               View Project
               <svg
@@ -410,6 +408,7 @@
             <a
               href="https://github.com/MaThanhNhi/spring-petclinic-microservices"
               class="project-link"
+              target="_blank"
             >
               View Project
               <svg
@@ -443,19 +442,11 @@
           <!-- Member 1 -->
           <article class="member-card">
             <div class="member-avatar">
-              <div class="avatar-placeholder">
-                <svg
-                  width="64"
-                  height="64"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
+              <img 
+                src="members/22120238/images/MinhNguyen01.jpg" 
+                alt="Nguyen Minh Nguyen"
+                class="member-photo"
+              />
             </div>
             <div class="member-info">
               <h3 class="member-name">Nguyen Minh Nguyen</h3>
@@ -480,19 +471,11 @@
           <!-- Member 2 -->
           <article class="member-card">
             <div class="member-avatar">
-              <div class="avatar-placeholder">
-                <svg
-                  width="64"
-                  height="64"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
+              <img 
+                src="members/22120248/images/TrongNhan01.jpg" 
+                alt="Nguyen Trong Nhan"
+                class="member-photo"
+              />
             </div>
             <div class="member-info">
               <h3 class="member-name">Nguyen Trong Nhan</h3>
@@ -601,37 +584,59 @@
         }
       });
 
-      // Active nav link on scroll
+      // Active nav link on scroll - with debouncing to prevent flickering
       const sections = document.querySelectorAll("section[id]");
+      let scrollTimeout;
+      let isScrolling = false;
 
       window.addEventListener("scroll", () => {
-        const scrollY = window.pageYOffset;
+        // Clear existing timeout
+        clearTimeout(scrollTimeout);
+        
+        // Set timeout to update active link after scrolling stops
+        scrollTimeout = setTimeout(() => {
+          const scrollY = window.pageYOffset;
+          let currentSection = "";
 
-        sections.forEach((section) => {
-          const sectionHeight = section.offsetHeight;
-          const sectionTop = section.offsetTop - 100;
-          const sectionId = section.getAttribute("id");
+          // Find the current section
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - navbar.offsetHeight - 20;
+            const sectionHeight = section.offsetHeight;
+            
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+              currentSection = section.getAttribute("id");
+            }
+          });
 
-          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          // Update active link only if section changed
+          if (currentSection) {
             navLinks.forEach((link) => {
               link.classList.remove("active");
-              if (link.getAttribute("href") === `#${sectionId}`) {
+              if (link.getAttribute("href") === `#${currentSection}`) {
                 link.classList.add("active");
               }
             });
           }
-        });
+          
+          isScrolling = false;
+        }, 100); // Small delay to smooth out the transition
       });
 
-      // Smooth scroll
+      // Smooth scroll with improved nav link handling
       navLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
           e.preventDefault();
+          isScrolling = true;
+          
           const targetId = link.getAttribute("href");
           const targetSection = document.querySelector(targetId);
 
+          // Immediately update active state on click
+          navLinks.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+
           if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 80;
+            const offsetTop = targetSection.offsetTop - navbar.offsetHeight;
             window.scrollTo({
               top: offsetTop,
               behavior: "smooth",
@@ -640,27 +645,27 @@
         });
       });
 
-      // Scroll animations
+      // Simplified scroll animations - only animate once when entering viewport
       const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.15,
+        rootMargin: "0px 0px -80px 0px",
       };
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
+          if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
+            entry.target.classList.add("animated");
+            // Unobserve after animating once
+            observer.unobserve(entry.target);
           }
         });
       }, observerOptions);
 
+      // Initialize elements with simple fade-in class
       document
-        .querySelectorAll(".project-card, .member-card, .about-card")
+        .querySelectorAll(".project-card, .member-card, .about-card, .about-team-image")
         .forEach((el) => {
-          el.style.opacity = "0";
-          el.style.transform = "translateY(30px)";
-          el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          el.classList.add("animate-on-scroll");
           observer.observe(el);
         });
 
@@ -668,10 +673,65 @@
       const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
       const navMenu = document.querySelector(".nav-menu");
 
-      mobileMenuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-        mobileMenuToggle.classList.toggle("active");
-      });
+      if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+          mobileMenuToggle.classList.toggle("active");
+        });
+      }
+
+      // Responsive Image Map
+      const teamImage = document.querySelector('.team-photo');
+      const teamMap = document.querySelector('map[name="teammap"]');
+      
+      if (teamImage && teamMap) {
+        // Store original coordinates and image dimensions
+        const areas = teamMap.querySelectorAll('area');
+        const originalCoords = [];
+        let originalWidth = 0;
+        
+        // Wait for image to load to get original dimensions
+        teamImage.addEventListener('load', function() {
+          originalWidth = this.naturalWidth;
+          
+          // Store original coordinates
+          areas.forEach(area => {
+            const coords = area.getAttribute('coords').split(',').map(Number);
+            originalCoords.push({
+              element: area,
+              coords: coords
+            });
+          });
+          
+          // Initial resize
+          resizeMap();
+        });
+        
+        // Function to resize map coordinates
+        function resizeMap() {
+          if (originalWidth === 0) return;
+          
+          const currentWidth = teamImage.offsetWidth;
+          const scale = currentWidth / originalWidth;
+          
+          originalCoords.forEach(item => {
+            const newCoords = item.coords.map(coord => Math.round(coord * scale));
+            item.element.setAttribute('coords', newCoords.join(','));
+          });
+        }
+        
+        // Resize on window resize with debounce
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+          clearTimeout(resizeTimeout);
+          resizeTimeout = setTimeout(resizeMap, 100);
+        });
+        
+        // Trigger load event if image is already cached
+        if (teamImage.complete) {
+          teamImage.dispatchEvent(new Event('load'));
+        }
+      }
     </script>
   </body>
 </html>
