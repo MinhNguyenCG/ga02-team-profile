@@ -167,7 +167,7 @@ a:visited {
   font-family: var(--font-display);
   text-decoration: none;
   color: var(--text-primary);
-  transition: transform var(--transition-fast);
+  transition: transform var(--transition-base);
 }
 
 .logo:hover {
@@ -286,11 +286,9 @@ map area {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: radial-gradient(
-    ellipse at top,
-    var(--bg-secondary) 0%,
-    var(--bg-primary) 50%
-  );
+  background: radial-gradient(ellipse at top,
+      var(--bg-secondary) 0%,
+      var(--bg-primary) 50%);
 }
 
 .gradient-orb {
@@ -329,13 +327,16 @@ map area {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translate(0, 0) scale(1);
   }
+
   33% {
     transform: translate(30px, -30px) scale(1.1);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
@@ -506,6 +507,7 @@ map area {
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -513,9 +515,11 @@ map area {
   100% {
     transform: translateX(-50%) translateY(0);
   }
+
   40% {
     transform: translateX(-50%) translateY(-10px);
   }
+
   60% {
     transform: translateX(-50%) translateY(-5px);
   }
@@ -526,9 +530,11 @@ map area {
     opacity: 0;
     top: 8px;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     top: 20px;
@@ -836,7 +842,6 @@ map area {
   margin-bottom: var(--spacing-md);
 }
 
-
 .member-photo {
   width: 120px;
   height: 120px;
@@ -1067,11 +1072,9 @@ map area {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background: radial-gradient(
-    ellipse at top,
-    var(--bg-secondary) 0%,
-    var(--bg-primary) 50%
-  );
+  background: radial-gradient(ellipse at top,
+      var(--bg-secondary) 0%,
+      var(--bg-primary) 50%);
   pointer-events: none;
 }
 
@@ -1085,6 +1088,7 @@ map area {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -1179,6 +1183,7 @@ map area {
     transform: scale(0.8);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -1336,6 +1341,7 @@ map area {
     opacity: 0;
     transform: translateY(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1347,6 +1353,7 @@ map area {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1358,6 +1365,7 @@ map area {
     opacity: 0;
     transform: translateX(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -1413,7 +1421,7 @@ map area {
 
   .member-page-container {
     padding: var(--spacing-xl);
-  } 
+  }
 
   /* Navigation Mobile */
   .mobile-menu-toggle {
@@ -1875,7 +1883,8 @@ map area {
 }
 
 /* High DPI Displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .avatar {
     image-rendering: -webkit-optimize-contrast;
   }
@@ -1886,6 +1895,7 @@ map area {
    =================================== */
 
 @media print {
+
   .navbar,
   .mobile-menu-toggle,
   .scroll-indicator,
@@ -1929,6 +1939,7 @@ button:focus {
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -1942,27 +1953,6 @@ button:focus {
     animation: none;
   }
 }
-
-/* ===================================
-   DARK MODE TOGGLE (Optional Enhancement)
-   =================================== */
-
-/* If you want to add light mode support in the future, 
-   you can use this structure: */
-
-/*
-body.light-mode {
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #e2e8f0;
-  --bg-card: rgba(255, 255, 255, 0.8);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
-}
-*/
 
 /* ===================================
    CUSTOM SCROLLBAR
@@ -2015,12 +2005,10 @@ body.light-mode {
 }
 
 .skeleton {
-  background: linear-gradient(
-    90deg,
-    var(--bg-tertiary) 25%,
-    var(--bg-card) 50%,
-    var(--bg-tertiary) 75%
-  );
+  background: linear-gradient(90deg,
+      var(--bg-tertiary) 25%,
+      var(--bg-card) 50%,
+      var(--bg-tertiary) 75%);
   background-size: 200% 100%;
   animation: skeleton-loading 1.5s infinite;
 }
@@ -2029,6 +2017,7 @@ body.light-mode {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }

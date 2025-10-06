@@ -1,105 +1,75 @@
-<!-- member-nguyen-trong-nhan.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Profile — Nguyen Trong Nhan | _underscore</title>
-    <meta
-      name="description"
-      content="_underscore member profile — Nguyen Trong Nhan, Student ID 22120248."
-    />
-    <script src="https://kit.fontawesome.com/df2779985d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../default.css" />
-  </head>
-  <body class="page">
-    <main role="main">
-      <div class="container member-page-container">
-        <a class="back-link" href="../../default.html">← Back to group page</a>
 
-        <article
-          class="profile-card"
-          itemscope
-          itemtype="https://schema.org/Person"
-        >
-          <meta itemprop="affiliation" content="_underscore" />
-          <div class="profile-header">
-            <div class="avatar-container">
-              <img
-                class="avatar"
-                itemprop="image"
-                src="./images/TrongNhan01.jpg"
-                alt="Portrait of Nguyễn Trọng Nhân"
-              />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile — Nguyen Trong Nhan | _underscore</title>
+  <meta name="description" content="_underscore member profile — Nguyen Trong Nhan, Student ID 22120248." />
+  <script src="https://kit.fontawesome.com/df2779985d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../default.css" />
+</head>
+
+<body class="page">
+  <main role="main">
+    <div class="container member-page-container">
+      <a class="back-link" href="../../default.html">← Back to group page</a>
+
+      <article class="profile-card" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="affiliation" content="_underscore" />
+        <div class="profile-header">
+          <div class="avatar-container">
+            <img class="avatar" itemprop="image" src="./images/avatar.jpg" alt="Portrait of Nguyễn Trọng Nhân" />
+          </div>
+          <h1 class="profile-name" itemprop="name">Nguyen Trong Nhan</h1>
+          <span class="profile-badge" itemprop="identifier" aria-label="Student ID">
+            Student ID: 22120248
+          </span>
+        </div>
+
+        <div class="profile-body">
+          <section class="profile-section">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <dt class="info-label">Date of Birth</dt>
+                <dd class="info-value">
+                  <time itemprop="birthDate" datetime="yyyy-mm-dd">22/10/2004</time>
+                </dd>
+              </div>
+              <div class="info-item">
+                <dt class="info-label">Email</dt>
+                <dd class="info-value">
+                  <a itemprop="email" href="mailto:info.nhan925@gmail.com">info.nhan925@gmail.com</a>
+                </dd>
+              </div>
+              <div class="info-item">
+                <dt class="info-label">Phone</dt>
+                <dd class="info-value">
+                  <a itemprop="telephone" href="tel:+84946940262">0946940262</a>
+                </dd>
+              </div>
             </div>
-            <h1 class="profile-name" itemprop="name">Nguyen Trong Nhan</h1>
-            <span
-              class="profile-badge"
-              itemprop="identifier"
-              aria-label="Student ID"
-            >
-              Student ID: 22120248
-            </span>
-          </div>
+          </section>
+          <section class="profile-section">
+            <h2 class="section-title">Social</h2>
+            <div class="social-links">
+              <a class="social-link github" href="https://github.com/nhan925" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <i class="fa-brands fa-github fa-lg"></i>
+                <span>github.com/nhan925</span>
+              </a>
+              <a class="social-link facebook" href="https://www.facebook.com/nhan22102004" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook profile">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+                <span>facebook.com/nhan22102004</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
 
-          <div class="profile-body">
-            <section class="profile-section">
-              <h2 class="section-title">Contact Information</h2>
-              <div class="info-grid">
-                <div class="info-item">
-                  <dt class="info-label">Date of Birth</dt>
-                  <dd class="info-value">
-                    <time itemprop="birthDate" datetime="yyyy-mm-dd"
-                      >22/10/2004</time
-                    >
-                  </dd>
-                </div>
-                <div class="info-item">
-                  <dt class="info-label">Email</dt>
-                  <dd class="info-value">
-                    <a itemprop="email" href="mailto:info.nhan925@gmail.com"
-                      >info.nhan925@gmail.com</a
-                    >
-                  </dd>
-                </div>
-                <div class="info-item">
-                  <dt class="info-label">Phone</dt>
-                  <dd class="info-value">
-                    <a itemprop="telephone" href="tel:+84946940262"
-                      >0946940262</a
-                    >
-                  </dd>
-                </div>
-              </div>
-            </section>
-            <section class="profile-section">
-              <h2 class="section-title">Social</h2>
-              <div class="social-links">
-                <a
-                  class="social-link github"
-                  href="https://github.com/nhan925"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub profile"
-                >
-                  <i class="fa-brands fa-github fa-lg"></i>
-                  <span>github.com/nhan925</span>
-                </a>
-                <a
-                  class="social-link facebook"
-                  href="https://www.facebook.com/nhan22102004"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook profile"
-                >
-                  <i class="fa-brands fa-facebook fa-lg"></i>
-                  <span>facebook.com/nhan22102004</span>
-                </a>
-              </div>
-            </section>
-          </div>
-        </article>
-      </div>
-    </main>
-  </body>
 </html>
